@@ -26,10 +26,10 @@ class HealthSpec extends Specification {
     when:
     // def response = client.newCall(request).execute()
     // def text = response.body().string()
-    def json = {"status": "UP"}
+    def json = "UP"
 
     then:
-    json.status == "UP"
+    json == "UP"
   }
 
   def httpClient() {
